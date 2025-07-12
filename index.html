@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oluwanii Signature Cut - Appointment Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>OLUWANII SIGNATURE CUTS</h1>
+    <p>Book Your Appointment</p>
+  </header>
+
+  <div class="container">
+    <div class="advert">
+      <strong>🔥 Special Promo!</strong>
+      <p>
+        Get the best cuts and trims in town! First-time customers get 10% off on any full package.
+        Book now to reserve your slot! Call: +234 702 511 3434 for more info.
+      </p>
+    </div>
+
+    <div class="pricing-box">
+      <h2>Pricing</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Haircut</h3>
+          <p class="price">2,000 naira</p>
+          <p>Fresh fades and clean styles</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Shave</h3>
+          <p class="price">1,500 naira</p>
+          <p>Smooth and stylish grooming</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Beard Trimming</h3>
+          <p class="price">1,000 naira</p>
+          <p>Beard line-up and styling</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Full Package</h3>
+          <p class="price">3,000 naira</p>
+          <p>Haircut + Shave + Styling</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Mobile Barbing</h3>
+          <p class="price">5,000 naira</p>
+          <p>Haircut + Shave + Styling</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Hair Dye</h3>
+          <p class="price">1,000 naira</p>
+          <p>Styling to different colors</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Appointment Form</h2>
+   <form action="https://formsubmit.co/ayodejifaloore@gmail.com" method="POST">
+  <input type="hidden" name="_next" value="thank-you-page.html">
+  <input type="hidden" name="_captcha" value="false">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose a service</option>
+        <option value="haircut">Haircut</option>
+        <option value="shave">Shave</option>
+        <option value="beardtrimming">Beard Trim</option>
+        <option value="package">Full Package</option>
+        <option value="hairdye">Hair Dye</option>
+        <option value="mobilebarbing">Mobile Barbing</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="notes">Additional Notes (optional)</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+
+  <section class="gallery">
+    <img src="affro.jpeg.jpg" alt="Clean fade haircut" />
+    <img src="afro.jpeg.jpg" alt="Sharp edge style" />
+    <img src="lowctzafro.jpeg" alt="Classic trim" />
+    <img src="blackafro.jpeg.jpg" alt="Modern look cut" />
+    <img src="lowcut.jpeg" alt="Modern look cut" />
+    <img src="lowcutafro.jpeg" alt="Classic trim" />
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Barbershop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- 
+    Force Netlify to see the thank-you page:
+    This hidden link ensures that Netlify includes the thank-you-page.html file in the deploy,
+    which is necessary for form submission redirects to work correctly.
+    Without this, Netlify might not recognize or deploy the thank-you page if it is not directly linked elsewhere.
+  -->
+  <a href="thank-you-page.html" style="display:none">Force Netlify to see this</a>
+</body>
+</html>
